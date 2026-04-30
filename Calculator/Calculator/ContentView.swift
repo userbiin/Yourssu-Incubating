@@ -69,12 +69,12 @@ struct ContentView: View {
 
     
     var body: some View {
-        VStack() {
+        VStack(spacing: 10) {
             TextField("첫 번째 숫자를 입력해주세요", text: $input1) // binding($) 인자 필요
                 .keyboardType(.decimalPad)
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.systemGray))
-                .frame(maxWidth: 300, alignment: .leading)
+                .frame(width: 300, height: 35, alignment: .leading)
                 .padding(10)
                 .background(Color(.secondarySystemBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -84,7 +84,7 @@ struct ContentView: View {
                 .keyboardType(.decimalPad)
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.systemGray))
-                .frame(maxWidth: 300, alignment: .leading)
+                .frame(width: 300, height: 35, alignment: .leading)
                 .padding(10)
                 .background(Color(.secondarySystemBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -98,7 +98,7 @@ struct ContentView: View {
             }
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.white))
-                .frame(maxWidth: 300, alignment: .center)
+                .frame(width: 300, height: 39, alignment: .center)
                 .padding(10)
                 .background(Color(.systemTeal))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -109,7 +109,7 @@ struct ContentView: View {
             }
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.white))
-                .frame(maxWidth: 300, alignment: .center)
+                .frame(width: 300, height: 39 ,alignment: .center)
                 .padding(10)
                 .background(Color(.systemTeal))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -120,7 +120,7 @@ struct ContentView: View {
             }
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.white))
-                .frame(maxWidth: 300, alignment: .center)
+                .frame(width: 300, height: 39, alignment: .center)
                 .padding(10)
                 .background(Color(.systemTeal))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -131,7 +131,7 @@ struct ContentView: View {
             }
                 .font(.system(size: 15, weight: .medium, design: .rounded))
                 .foregroundColor(Color(.white))
-                .frame(maxWidth: 300, alignment: .center)
+                .frame(width: 300, height: 39, alignment: .center)
                 .padding(10)
                 .background(Color(.systemTeal))
                 .clipShape(RoundedRectangle(cornerRadius: 50))
